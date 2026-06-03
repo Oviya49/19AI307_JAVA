@@ -32,18 +32,22 @@ RegisterNumber: 212223040140
 ## Sourcecode.java:
 
 ```
-import java.util.Scanner;
-public class Demo {
-
-public static void main(String[] args) {
-    Scanner sc=new Scanner(System.in);
-int a = sc.nextInt();
- int c = sc.nextInt();
- int d;
-
-      d = a>>c;       
-      System.out.println(a+" >> " + c+" = " + d );
-   }
+import java.util.*;
+public class Demo{
+    public static void main(String[] args)
+    {
+        Scanner input  = new Scanner(System.in);
+        int a = input.nextInt();
+        int b = input.nextInt();
+        if(a <  50 && a <  b)
+        {
+            System.out.print("true");
+        }
+        else
+        {
+            System.out.print("false");
+        }
+    }
 }
 ```
 
