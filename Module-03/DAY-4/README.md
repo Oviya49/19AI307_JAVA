@@ -1,18 +1,20 @@
-# Ex.No:3(D) STRING TOKENIZER IN JAVA
+# Ex.No:3(d)    STRING BUILDER IN JAVA
 
 ## AIM:
-To create a java program using StringTokenizer class that tokenizes a string "My name is Java Programming" on the basis of whitespace.
+To Create a java program use replace() method replaces the given String from the specified beginIndex and endIndex and use stringbuilder
 
 ## ALGORITHM :
-1.	Start the Program
-2.	Import `Scanner` and `StringTokenizer` and define class `tok`
+1.  Start the Program
+2.	Import `Scanner` and define class `replace`
 3.	In `main`:
 -	a) Create `Scanner` object `sc`
--	b) Initialize the string `str` as "My name is Java Programming"
-4.	Create a `StringTokenizer` object `token` to tokenize `str`
-5.	Use a `while` loop to iterate through tokens:
--	a) Print each token using `token.nextToken()`
-6.	End
+-	b) Read a string `str` from user input
+4.	Create a `StringBuilder` object `sb` initialized with `str`
+5.	Use the `replace()` method to replace characters from index 1 to 3 with "Java"
+6.	Print the modified string using `sb.toString()`
+7.	End
+
+
 
 
 
@@ -22,19 +24,30 @@ To create a java program using StringTokenizer class that tokenizes a string "My
 
 ## Sourcecode.java:
 ```
+import java.util.Scanner;
 
-import java.util.StringTokenizer;  
-public class Demo{  
- public static void main(String args[]){  
-   StringTokenizer st = new StringTokenizer("My name is Java Programming"," ");  
-     while (st.hasMoreTokens()) {  
-         System.out.println(st.nextToken());  
-     }  
-   }  
+public class StringBuilderAppend {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String input = scanner.nextLine();
+        scanner.close();
+
+        StringBuilder sb1 = new StringBuilder(input); // Initialize with input
+        sb1.append("s");
+
+        System.out.println("sb1 = " + sb1.toString());
+    }
 }
 ```
+
+
 ## OUTPUT:
-<img width="527" alt="Image" src="https://github.com/user-attachments/assets/34a4623a-76a0-4432-83e5-09eb0385cf91" />
+
+<img width="396" alt="Image" src="https://github.com/user-attachments/assets/a4d4c276-cb4b-497b-9c75-2ec65537a593" />
 
 ## RESULT:
-Thus the java program using StringTokenizer class that tokenizes a string "My name is Java Programming" on the basis of whitespace was executed successfully.
+Thus the java program use replace() method replaces the given String from the specified beginIndex and endIndex and use stringbuilder was executed successfully.
+
+
+
